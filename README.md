@@ -1,122 +1,121 @@
-# 📊 Student Performance Prediction using Machine Learning
+# 📊 Student Performance Prediction using Multiple Linear Regression
 
-## 🚀 Project Overview
-This project predicts the **Performance Index** of students using **Multiple Linear Regression**.  
-It demonstrates a complete Machine Learning pipeline including data preprocessing, exploratory data analysis (EDA), model training, evaluation, and validation.
+![Python](https://img.shields.io/badge/Python-3.10-blue?style=flat&logo=python)
+![Scikit-Learn](https://img.shields.io/badge/ML-Scikit--Learn-orange?style=flat&logo=scikit-learn)
+![Status](https://img.shields.io/badge/Project-Completed-success)
+![License](https://img.shields.io/badge/License-MIT-green)
+
+---
+
+## 🚀 Overview
+This project builds a **Multiple Linear Regression model** to predict students' **Performance Index** based on academic and lifestyle factors.
+
+It demonstrates an **end-to-end Machine Learning workflow** including:
+- Data preprocessing  
+- Exploratory Data Analysis (EDA)  
+- Model training  
+- Evaluation & validation  
 
 ---
 
 ## 📁 Dataset
-- **File:** `Student_Performance.csv`
-- **Source:** Kaggle
 
-### 📌 Features:
-- `Hours Studied` → Numeric  
-- `Previous Scores` → Numeric  
-- `Extracurricular Activities` → Categorical  
-- `Sleep Hours` → Numeric  
-- `Sample Question Papers Practiced` → Numeric  
-- `Performance Index` → Target Variable  
+- **Source:** Kaggle  
+- **File:** `Student_Performance.csv`
+
+### 🔢 Features:
+| Feature | Type | Description |
+|--------|------|------------|
+| Hours Studied | Numeric | Study time per day |
+| Previous Scores | Numeric | Past academic performance |
+| Extracurricular Activities | Categorical | Participation (Yes/No) |
+| Sleep Hours | Numeric | Daily sleep duration |
+| Sample Question Papers Practiced | Numeric | Practice count |
+| Performance Index | Numeric | Target variable |
 
 ---
 
 ## ⚙️ Tech Stack
-- Python 🐍
-- Pandas
-- NumPy
-- Matplotlib
-- Seaborn
-- Scikit-learn
+
+- **Language:** Python 🐍  
+- **Libraries:**
+  - Pandas  
+  - NumPy  
+  - Matplotlib  
+  - Seaborn  
+  - Scikit-learn  
 
 ---
 
-## 🔄 Project Workflow
+## 🔄 Workflow
 
-### 1. Data Loading & Exploration
-- Loaded dataset using Pandas
-- Checked:
-  - Data types (`info()`)
-  - Statistical summary (`describe()`)
-  - Missing values
-  - Duplicate records
+### 📌 1. Data Preprocessing
+- Checked missing values & duplicates  
+- Encoded categorical feature using **One-Hot Encoding**
 
 ---
 
-### 2. Data Preprocessing
-- Handled categorical data using **One-Hot Encoding**
-- Removed duplicate values
-- Split dataset into:
-  - Features (X)
-  - Target (y)
+### 📊 2. Exploratory Data Analysis
+- Correlation heatmap  
+- Feature distribution plots  
+- Relationship analysis between variables  
 
 ---
 
-### 3. Exploratory Data Analysis (EDA)
-- Correlation heatmap
-- Distribution plots
-- Analysis of categorical features
+### 🤖 3. Model Training
+- Algorithm: **Multiple Linear Regression**
+- Train-Test Split: **80 / 20**
 
 ---
 
-### 4. Model Building
-- Algorithm used: **Multiple Linear Regression**
-- Library: Scikit-learn
+### 📈 4. Model Evaluation
+- **R² Score**
+- **Mean Squared Error (MSE)**
 
 ---
 
-### 5. Train-Test Split
-- 80% Training Data  
-- 20% Testing Data  
-
----
-
-### 6. Model Evaluation
-- 📈 R² Score  
-- 📉 Mean Squared Error (MSE)
-
----
-
-### 7. Cross Validation
+### 🔁 5. Cross Validation
 - Applied **5-Fold Cross Validation**
-- Ensured model stability and reliability
+- Ensured model stability and generalization  
 
 ---
 
-### 8. Visualization
-- Scatter plot of:
-  - Actual vs Predicted values
+### 📉 6. Visualization
+- Actual vs Predicted scatter plot  
+- Performance comparison  
 
 ---
 
 ## 📊 Results
-- Model shows strong predictive performance
-- Good correlation between study-related features and performance
-- Stable results across cross-validation
+
+- ✅ Strong correlation between study patterns and performance  
+- ✅ High R² score indicating good prediction accuracy  
+- ✅ Stable results across cross-validation  
 
 ---
 
-## 🛠️ How to Run
-
-### 1. Clone Repository
-```bash
-git clone https://github.com/your-username/student-performance-mlr.git
-```
-cd student-performance-mlr
-
-2. Install Dependencies
-pip install pandas numpy matplotlib seaborn scikit-learn
-3. Run Notebook
-jupyter notebook Student_Performance.ipynb
-📂 Project Structure
+## 📂 Project Structure
 student-performance-mlr/
 │── Student_Performance.ipynb
 │── Student_Performance.csv
 │── README.md
 │── requirements.txt
-🔮 Future Improvements
-Try advanced models:
-Random Forest
-XGBoost
-Hyperparameter tuning
-Feature engineering
-Deploy using Streamlit / Flask
+
+
+---
+
+## 🛠️ Installation & Usage
+
+### 1️⃣ Clone the Repository
+```bash
+git clone https://github.com/devendrakushwah80/multiple-linear-regression-student.git
+cd multiple-linear-regression-student
+2️⃣ Install Dependencies
+pip install -r requirements.txt
+3️⃣ Run the Notebook
+jupyter notebook Student_Performance.ipynb
+🔮 Future Enhancements
+🚀 Implement advanced models (Random Forest, XGBoost)
+🎯 Hyperparameter tuning
+📊 Feature engineering
+🌐 Deploy using Streamlit or Flask
